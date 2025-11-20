@@ -1,0 +1,132 @@
+/* Reset some default styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	background: #f4f6fa;
+	color: #222;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	background: linear-gradient(90deg, #6a82fb, #fc5c7d);
+	color: #fff;
+	padding: 32px 0 16px 0;
+	text-align: center;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+nav {
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+	padding: 12px 0;
+	margin-bottom: 24px;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+}
+nav a {
+	text-decoration: none;
+	color: #6a82fb;
+	font-weight: 500;
+	font-size: 1.1em;
+	transition: color 0.2s;
+}
+nav a:hover {
+	color: #fc5c7d;
+}
+
+main {
+	flex: 1;
+	max-width: 900px;
+	margin: 0 auto 32px auto;
+	background: #fff;
+	border-radius: 12px;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+	padding: 32px 24px;
+}
+
+aside {
+	max-width: 900px;
+	margin: 0 auto 24px auto;
+	background: #e9eafc;
+	border-radius: 10px;
+	padding: 18px 20px;
+	color: #3a3a5a;
+	box-shadow: 0 1px 6px rgba(106,130,251,0.07);
+}
+
+footer {
+	background: #6a82fb;
+	color: #fff;
+	text-align: center;
+	padding: 18px 0;
+	margin-top: auto;
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+
+h1, h2, h3 {
+	font-family: 'Segoe UI', Arial, sans-serif;
+	margin-bottom: 12px;
+}
+h1 {
+	font-size: 2.5em;
+	letter-spacing: 2px;
+}
+h2 {
+	font-size: 1.7em;
+	color: #6a82fb;
+}
+h3 {
+	font-size: 1.2em;
+	color: #fc5c7d;
+}
+
+img {
+	border-radius: 10px;
+	margin: 16px 16px 16px 0;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	max-width: 100%;
+	height: auto;
+}
+
+video, audio {
+	display: block;
+	margin: 24px auto;
+	max-width: 100%;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (max-width: 700px) {
+	main, aside {
+		padding: 16px 6px;
+		max-width: 98vw;
+	}
+	nav ul {
+		gap: 12px;
+	}
+	h1 {
+		font-size: 1.5em;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background: #e9eafc;
+}
+::-webkit-scrollbar-thumb {
+	background: #6a82fb;
+	border-radius: 8px;
+}
